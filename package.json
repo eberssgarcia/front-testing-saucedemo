@@ -1,0 +1,27 @@
+{
+  "name": "sauce-playwright-cucumber",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + Cucumber (TypeScript) E2E suite for Sauce Demo",
+  "scripts": {
+    "preinstall": "npx -y playwright install --with-deps",
+    "test": "cucumber-js -p default",
+    "test:headed": "cross-env HEADLESS=false cucumber-js -p default",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2",
+    "cross-env": "^10.0.0",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.48.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "main": "cucumber.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
